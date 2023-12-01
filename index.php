@@ -9,3 +9,4 @@ echo  "riepas izmers ir ".$tire1->size.", riepas tips ir ".$tire1->type.", riepa
 
 echo Car::$describe;
 Car::makeNoise();
+Train::makeNoise();

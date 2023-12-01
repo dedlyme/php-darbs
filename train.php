@@ -1,6 +1,6 @@
 <?php
-
-class Train {
+include_once "Vehicle.php";
+class Train extends Vehicle {
   function __construct( 
       public $brand , 
       public $trackgouge, 
@@ -14,10 +14,9 @@ class Train {
   {
     echo "<br>"."boom!";
   }
-  function increaseMileage($amount){
-      $this->mileage = $this->mileage +=$amount;
-  }
+
   static function makeNoise(){
       echo "choo choo";
   }
+  
 }
